@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>proyecto2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+<!--   El proceso de puesta en servicio de un servlet podríamos resumirlo en dos pasos. -->
+<!--    El primero de ellos es crear el servlet. Para ello implementaremos una clase java que extienda de HttpServlet,  -->
+<!--    la cual implementará la funcionalidad de negocio que estemos resolviendo. -->
+
+<!-- Pero de nada nos sirve el crear un servlet si no lo publicicamos al exterior.  -->
+<!-- Este mecanismo de publicación es lo que se conoce como mapping. -->
+
+<!-- La idea del mapping es la de asociar una URL a un servlet. -->
+
+<!-- Para ello deberemos de configurar el descriptor de despliegue de la aplicación. -->
+<!--  Este es el fichero que encontramos en /WEB-INF/web.xml -->
+
+<!-- En este fichero necesitaremos de la etiqueta <servlet-mapping>. -->
+<!--  Esta etiqueta nos permitirá definir un nuevo mapping. -->
+<!-- Anidado a esta etiqueta encontramos dos: -->
+<!--  la primera especificará el nombre del servlet sobre el que queremos establecer el mapping <servlet-name>, -->
+<!--   mientras que la segunda especificará sobre que URL se realiza el mapping <url-pattern>. -->
+  
+  
+  <servlet>
+  	<servlet-name>Miprimerservlet</servlet-name>
+  	<servlet-class>com.utn.clase1.Miprimerservlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+	<servlet-name>Miprimerservlet</servlet-name>
+	<url-pattern>/HolaMundoCruel</url-pattern>
+</servlet-mapping>
+  
+</web-app>
+
+
