@@ -1,0 +1,26 @@
+Ejercicios Herencia - Interface JAVA SE8
+1) Escribe una clase Multimedia para almacenar información de los objetos de tipo multimedia (películas, discos, mp3,mp4…). Esta clase contiene título, autor, formato, y duración como atributos. El formato puede ser uno de los siguientes: wav, mp3, midi, avi, mov, mpg, cdAudio y dvd. El valor de todos los atributos se pasa por parámetro en el momento de crear el objeto. Esta clase tiene además, un método para devolver cada uno de los atributos y un método toString() que devuelve la información del objeto. Por último, un método equals() que recibe un objeto de tipo Multimedia y devuelve true en caso de que el título y el autor sean iguales y false en caso contrario.
+2) Escribe una clase Película que herede de la clase Multimedia anterior. La clase Película tiene, además de los atributos heredados, un actor principal y una actriz principal. Se permite que uno de los dos sea nulo, pero no los dos. La clase debe tener dos métodos para obtener los nuevos atributos y debe sobreescribir el método toString() para reflejar la nueva información.
+3) Escribe una clase ListaMultimedia para almacenar objetos de tipo multimedia. La clase debe tener un atributo, que sea un array de objetos Multimedia y un entero para contar cuantos objetos hay almacenados. Además, tiene un constructor y los siguientes métodos:
+a).el constructor recibe un entero por parámetro indicando el número máximo de objetos que va a almacenar.
+b).int size(): devuelve el número de objetos que hay en la lista.
+c).boolean add(Multimedia m): añade el objeto al final de la lista, y devuelve true, en caso de que la lista esté llena, devuelve false.
+d).Multimedia get(int position): devuelve el objeto situado en la posición especificada.
+e).String toString(): devuelve la información de los objetos que están en la lista.
+
+4) Escribe una aplicación dónde:
+•	Se cree un objeto de tipo ListaMultimedia de tamaño 10.
+•	Se creen tres películas y se añadan a la lista.
+•	Se muestre la lista por pantalla.
+5) Escribe una clase Disco, que herede de la clase Multimedia ya realizada. La clase Disco tiene, aparte de los elementos heredados, un atributo para almacenar el género al que pertenece (rock, pop, ópera…). La clase debe tener un método para obtener el nuevo atributo y debe sobreescribir el método toString() para que devuelva toda la información.
+6) Interface - Escribe un programa para una biblioteca que contenga libros y revistas.
+•	Las características comunes que se almacenan tanto para las revistas como para los libros son el código, el título, y el año de publicación. Estas tres características se pasan por parámetro en el momento de crear los objetos.
+•	Los libros tienen además un atributo prestado. Los libros, cuando se crean, no están prestados.
+•	Las revistas tienen un número. En el momento de crear. En el momento de crear las revistas se pasa el número por parámetro.
+•	Tanto las revistas como los libros deben tener (aparte de los constructores) un método toString() que devuelve el valor de todos los atributos en una cadena de caracteres. También tienen un método que devuelve el año de publicación, y otro el código.
+•	Para prevenir posibles cambios en el programa se tiene que implementar una interfaz Prestable con los métodos prestar(),devolver() y prestado. La clase Libro implementa esta interfaz
+
+
+
+
+
